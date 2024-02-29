@@ -32,7 +32,7 @@ def get_db_url():
     password = os.getenv('POSTGRES_PASSWORD', "")
     db = os.getenv('POSTGRES_DB')
     # todo: change database for env variable server
-    return f'postgresql://{user}:{password}@localhost:5432/{db}'
+    return f'postgresql://{user}:{password}@database/{db}'
 
 
 
